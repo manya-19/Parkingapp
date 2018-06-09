@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Locationapp</string>
+    <string name="title_activity_places_list_adapter">PlacesListAdapter</string>
+    <string name="need_location_permission_message">You need to enable location permissions first</string>
+    <string name="setting_enabled" translatable="false">EnabledSetting</string>
+    <string name="silent_mode_activated">Silent mode activated</string>
+    <string name="touch_to_relaunch">Touch to launch the app.</string>
+    <string name="back_to_normal">Back to normal</string>
+    <string name="title_activity_main3">Main3Activity</string>
+</resources>

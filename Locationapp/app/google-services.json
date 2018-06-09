@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "543001150112",
+    "firebase_url": "https://locationapp-6a379.firebaseio.com",
+    "project_id": "locationapp-6a379",
+    "storage_bucket": "locationapp-6a379.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543001150112:android:a50162fe464616e1",
+        "android_client_info": {
+          "package_name": "com.example.manya.locationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543001150112-m3mkrrilr4cd8insk3gv2jme0khb243g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.manya.locationapp",
+            "certificate_hash": "a60050737dc8ede7d68508a278005358569cf885"
+          }
+        },
+        {
+          "client_id": "543001150112-j9dplqplpt48mtggr43bg5jiova9t9oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCps8jm_p8LwfFZ6te5VNZDla0l8VMa4YY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543001150112-j9dplqplpt48mtggr43bg5jiova9t9oh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

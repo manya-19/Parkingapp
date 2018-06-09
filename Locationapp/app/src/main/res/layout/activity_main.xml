@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/lgreentex"
+    tools:context="com.example.manya.locationapp.MainActivity">
+
+    <CheckBox
+        android:text="Enable Ringer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ringer_permissions_checkbox"
+        android:layout_below="@+id/location_permission_checkbox"
+        android:layout_alignLeft="@+id/location_permission_checkbox"
+        android:layout_alignStart="@+id/location_permission_checkbox"
+        android:visibility="gone"/>
+
+    <Switch
+        android:text="Enable Place Detection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enable_switch"
+        android:layout_below="@+id/ringer_permissions_checkbox"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/locations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Parking Locations"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:textColorHighlight="@color/common_google_signin_btn_text_light_pressed"
+        tools:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="153dp"
+        android:layout_height="157dp"
+        android:layout_alignEnd="@+id/locations"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/loc" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="369dp"
+        android:layout_height="33dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="94dp"
+        android:background="#349f30"
+        android:onClick="onAddPlaceButtonClicked"
+        android:text="search locations" />
+
+    <CheckBox
+        android:id="@+id/location_permission_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginRight="49dp"
+        android:layout_marginTop="15dp"
+        android:onClick="onLocationPermissionClicked"
+        android:text="Access Location"
+        android:visibility="invisible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/places_list"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/locations"
+        android:layout_alignEnd="@+id/button2" />
+
+</RelativeLayout>
